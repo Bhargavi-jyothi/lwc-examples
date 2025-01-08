@@ -15,7 +15,7 @@ public with sharing class CreateAccountController {
         }
     }
     @AuraEnabled
-    public static List<Account> createAccount(List<Account> accountList){
+    public static List<Account> createAccounts(List<Account> accountList){
         insert accountList;
         return accountList;
     }
