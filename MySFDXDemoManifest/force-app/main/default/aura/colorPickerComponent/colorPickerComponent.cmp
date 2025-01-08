@@ -1,0 +1,16 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <!-- Attribute to hold the color value -->
+    <aura:attribute name="colorCodeText" type="String" />
+
+    <lightning:card title="Change Text Color">
+        <!-- Embed the LWC component -->
+        <c:colorPicker oncolorchange="{!c.applyColor}" />
+
+        <!-- Text with dynamic color -->
+        <div style="text-align: center; height: 30px; font-size: 20px;">
+            <b style="{!'color:' + v.colorCodeText}">
+                Sending Color Code from LWC to Aura through events
+            </b>
+        </div>
+    </lightning:card>
+</aura:component>

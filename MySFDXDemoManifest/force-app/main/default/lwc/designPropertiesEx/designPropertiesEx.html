@@ -1,0 +1,12 @@
+<template>
+    <lightning-card  variant="Narrow"  title={title} icon-name="standard:account">
+        <div>
+        <p>Hi {firstName}</p>
+    </div>
+    <div>
+        <template if:true={isVisible}>
+        <img src={imgUrl} width="50" height="50">
+    </template>
+    </div>
+    </lightning-card>
+</template>

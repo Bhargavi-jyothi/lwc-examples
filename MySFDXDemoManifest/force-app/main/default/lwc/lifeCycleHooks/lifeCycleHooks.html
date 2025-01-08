@@ -1,0 +1,6 @@
+<template>
+    <lightning-button variant="brand" label="Show/Hide"  onclick={handleChange} class="slds-m-left_x-small"></lightning-button>
+   <template if:true={isVisible}>
+ <c-life-cycle-child-hooks></c-life-cycle-child-hooks>
+   </template>
+</template>
