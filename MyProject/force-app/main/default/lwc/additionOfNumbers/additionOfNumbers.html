@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Addition">
+        <h3 slot="title">
+            <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+            
+        </h3>
+        <div slot="footer">
+                <lightning-badge label={result}></lightning-badge>       
+        </div>
+        <lightning-input value={num1} name="num1" label="Enter Num1 " onchange={handleChange}></lightning-input>
+        <lightning-input value={num2} name="num2" label="Enter Num2 " onchange={handleChange}></lightning-input>
+    </lightning-card>
+</template>

@@ -1,0 +1,14 @@
+<template>
+    <lightning-card variant="Narrow" title="Map with list of values" icon-name="standard:account">
+        <template if:true={mapEntries}>
+            <template for:each={mapEntries} for:item="entry">
+                <p key={entry.key}>
+                    <strong>{entry.key}:</strong>
+                    <template for:each={entry.values} for:item="store">
+                        <span key={store}> {store} </span>
+                    </template>
+                </p>
+            </template>
+        </template>
+    </lightning-card>
+</template>

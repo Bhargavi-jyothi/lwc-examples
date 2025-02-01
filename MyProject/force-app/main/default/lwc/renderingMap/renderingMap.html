@@ -1,0 +1,13 @@
+<template>
+    <lightning-card variant="Narrow" title="Map Rendering" icon-name="standard:account">
+        <template if:true={mapData}>
+            <template for:each={mapData} for:item="mapkey">
+                <div key={mapkey.key} class="slds-p-horizontal_small">
+                    {mapkey.key} - {mapkey.value}
+                </div>
+            </template>
+        </template>
+
+        
+    </lightning-card>
+</template>
